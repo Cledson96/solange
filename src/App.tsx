@@ -152,8 +152,9 @@ function App() {
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Sua pele
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-400">
+                    {" "}
                     radiante
-                  </span>
+                  </span>{" "}
                   começa aqui
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
