@@ -7,7 +7,7 @@ import {
   Heart,
   MapPin,
   Phone,
-  Mail,
+  Facebook,
   Instagram,
   Menu,
   X,
@@ -20,6 +20,7 @@ import foto from "./foto.png";
 import service2 from "./service2.png";
 import service1 from "./service1.png";
 import service3 from "./service3.png";
+import sobre from "./esfoliante.png";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -33,19 +34,20 @@ function App() {
     {
       title: "Limpeza de pele profunda",
       description:
-        "Esfoliação para remover as células mortas e facilitar a eliminação dos cravos.",
+        "Esfoliação para remover as células mortas e visa remover cravos, espinhas e impurezas da pele.",
 
       image: service1,
     },
     {
       title: "Mascara de argila ",
-      description: "Ameniza espinhas e controla a oleosidade da pele.",
+      description:
+        "A argila purifica, desintoxica e renova a pele, enquanto seus minerais naturais nutrem profundamente e restauram o equilíbrio que sua pele precisa. ",
       image: service2,
     },
     {
       title: "Máscara Calmante",
       description:
-        "Acalma a pele após a extração, reduz vermelhidão e sensibilidade.",
+        "Ideal para peles sensíveis ou após procedimentos como extração, a Máscara Calmante acalma, hidrata, suaviza e reduz vermelhidão e sensibilidade, devolvendo o conforto da sua pele em poucos minutos.",
 
       image: service3,
     },
@@ -92,7 +94,6 @@ function App() {
               </a>
             </div>
 
-            {/* Mobile Menu Button */}
             <button
               className="md:hidden"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -106,7 +107,6 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t border-pink-100">
             <div className="px-2 pt-2 pb-3 space-y-1">
@@ -152,9 +152,8 @@ function App() {
                 <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight">
                   Sua pele
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-rose-400">
-                    {" "}
                     radiante
-                  </span>{" "}
+                  </span>
                   começa aqui
                 </h1>
                 <p className="text-xl text-gray-600 leading-relaxed">
@@ -337,7 +336,7 @@ function App() {
             <div className="relative">
               <div className="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl">
                 <img
-                  src="https://images.pexels.com/photos/3985319/pexels-photo-3985319.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  src={sobre}
                   alt="Esteticista profissional"
                   className="w-full h-full object-cover"
                 />
@@ -364,7 +363,7 @@ function App() {
               Entre em Contato
             </h2>
             <p className="text-xl text-gray-600">
-              Agende sua consulta e comece sua jornada para uma pele radiante
+              Agende seu horário e comece sua jornada para uma pele radiante
             </p>
           </div>
           <div
@@ -386,29 +385,15 @@ function App() {
                     <p className="text-gray-600">(41) 99842-3462</p>
                   </div>
                 </div>
-
-                <div className="flex items-center">
-                  <div className="bg-pink-100 p-3 rounded-full mr-4">
-                    <Mail className="h-6 w-6 text-pink-500" />
-                  </div>
-                  <div>
-                    <p className="font-semibold text-gray-900">E-mail</p>
-                    <p className="text-gray-600">trancoso.solange7@gmail.com</p>
-                  </div>
-                </div>
-
                 <div className="flex items-center">
                   <div className="bg-pink-100 p-3 rounded-full mr-4">
                     <MapPin className="h-6 w-6 text-pink-500" />
                   </div>
                   <div>
                     <p className="font-semibold text-gray-900">Endereço</p>
-                    <p className="text-gray-600">
-                      Rua João Sarot, 270 - Tatuquara
-                    </p>
+                    <p className="text-gray-600">Tatuquara, Curitiba-PR</p>
                   </div>
                 </div>
-
                 <div className="flex items-center">
                   <div className="bg-pink-100 p-3 rounded-full mr-4">
                     <Instagram className="h-6 w-6 text-pink-500" />
@@ -416,6 +401,18 @@ function App() {
                   <div>
                     <p className="font-semibold text-gray-900">Instagram</p>
                     <p className="text-gray-600">@trancoso.solange7</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center">
+                  <div className="bg-pink-100 p-3 rounded-full mr-4">
+                    <Facebook className="h-6 w-6 text-pink-500" />
+                  </div>
+                  <div>
+                    <p className="font-semibold text-gray-900">Facebook</p>
+                    <p className="text-gray-600">
+                      www.facebook.com/share/16XudHHj7F/
+                    </p>
                   </div>
                 </div>
               </div>
@@ -453,10 +450,10 @@ function App() {
                 <Phone className="h-6 w-6" />
               </a>
               <a
-                href="mailto:trancoso.solange7@gmail.com"
+                href="https://www.facebook.com/share/16XudHHj7F/"
                 className="text-gray-400 hover:text-pink-500 transition-colors"
               >
-                <Mail className="h-6 w-6" />
+                <Facebook className="h-6 w-6" />
               </a>
             </div>
             <p className="text-gray-500 mt-8 text-sm">
